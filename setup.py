@@ -13,9 +13,9 @@ setup(
         'prompt_toolkit>=3.0.0',
         'questionary==2.0.1',
     ],
-    author="Your Name",
+    author="Sai Gokula Krishnan",
     description="A CLI tool to manage Zsh history",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url="https://github.com/yourusername/fuckoff-cli",
+    url="https://github.com/Imgkl/fuckoff",
 )
