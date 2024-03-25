@@ -11,6 +11,7 @@ setup(
     },
     install_requires=[
         'prompt_toolkit>=3.0.0',
+        'questionary==2.0.1',
     ],
     author="Your Name",
     description="A CLI tool to manage Zsh history",
