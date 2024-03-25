@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="fuckoff-cli",
-    version="0.1.0",
+    name="fuckoff",
+    version="1.0.1",
     packages=find_packages(),
     entry_points={
         "console_scripts": [
@@ -10,7 +10,6 @@ setup(
         ],
     },
     install_requires=[
-        'prompt_toolkit>=3.0.0',
         'questionary==2.0.1',
     ],
     author="Sai Gokula Krishnan",
