@@ -22,7 +22,7 @@ def main():
        interactive_delete() 
     else:
         delete_last_command()
-        os.system('fc -R ~/.zsh_history')
+        os.system('exec zsh')
 
 if __name__ == "__main__":
     main()
