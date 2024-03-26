@@ -3,10 +3,31 @@ import os
 import questionary
 
 
+def delete_last_command():
+    history_path = os.path.expanduser('~/.zsh_history')
+    if not os.path.exists(history_path):
+        print("History file not found.")
+        return
+
+    with open(history_path, 'r', encoding='utf-8', errors='ignore') as file:
+        lines = file.readlines()
+
+    if len(lines) >= 2:
+        lines = lines[:-2]
+        with open(history_path, 'w', encoding='utf-8') as file:
+            file.writelines(lines)
+        print("Last command deleted from history")
+    elif len(lines) == 1:
+        lines = [] 
+        with open(history_path, 'w', encoding='utf-8') as file:
+            file.writelines(lines)
+        print("Last command deleted from history")
+    else:
+        print("History is already empty.")
 
 def delete_all_history():
     history_path = os.path.expanduser('~/.zsh_history')
-    confirm = input("Are you sure you want to delete all history? This action cannot be undone. (y/n): ")
+    confirm = input("Are you sure you want to delete all history? This action cannot be undone. (y/N): ")
     if confirm.lower() != 'y':
         print("Operation cancelled.")
         return
