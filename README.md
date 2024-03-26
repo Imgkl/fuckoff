@@ -19,3 +19,6 @@ brew tap Imgkl/fuckoff && brew install fuckoff
 > fuckoff -a # deletes all entries from zsh history
 > fuckoff -i # interactive deletion mode
 ````
+
+## Article on how I build this.
+[Shipping a CLI in one week.](https://gokula.dev/blog/one-week-brew)
