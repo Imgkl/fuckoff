@@ -11,6 +11,7 @@ setup(
     },
     install_requires=[
         'questionary==2.0.1',
+        'prompt-toolkit==3.0.36'
     ],
     author="Sai Gokula Krishnan",
     description="A CLI tool to manage Zsh history",
