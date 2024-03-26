@@ -1,3 +1,4 @@
+# Terminal history managment CLI
 
 ![Fuckoff CLI](https://i.ibb.co/YdDrV2r/fuckoff.png)
 
