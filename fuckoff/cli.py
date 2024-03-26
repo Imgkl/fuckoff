@@ -18,8 +18,10 @@ def main():
     args = parse_args()
     if args.all:
        delete_all_history()
+       os.system('exec zsh')
     elif args.interactive:
        interactive_delete() 
+       os.system('exec zsh')
     else:
         delete_last_command()
         os.system('exec zsh')
